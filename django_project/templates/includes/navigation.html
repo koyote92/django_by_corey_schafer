@@ -9,11 +9,17 @@
         <div class="navbar-nav mr-auto">
           <a class="nav-item nav-link" href="{% url 'blog-home' %}">Главная</a>
           <a class="nav-item nav-link" href="{% url 'blog-about' %}">О блоге</a>
+          <a class="nav-item nav-link" href="{% url 'post-create' %}">Создать публикацию</a>
         </div>
         <!-- Navbar Right Side -->
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Войти</a>
-          <a class="nav-item nav-link" href="{% url 'register' %}">Регистрация</a>
+          {% if user.is_authenticated %}
+            <a class="nav-item nav-link" href="{% url 'profile' %}">Профиль</a>
+            <a class="nav-item nav-link" href="{% url 'logout' %}">Выйти</a>
+          {% else %}
+            <a class="nav-item nav-link" href="{% url 'login' %}">Войти</a>
+            <a class="nav-item nav-link" href="{% url 'register' %}">Регистрация</a>
+          {% endif %}
         </div>
       </div>
     </div>
