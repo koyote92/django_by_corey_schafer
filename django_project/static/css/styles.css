@@ -12,12 +12,12 @@ ul {
   margin: 0;
 }
 
-.bg-steel {
-  background-color: #5f788a;
+.bg-darkseagreen {
+  background-color: darkseagreen;
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: white;
 }
 
 .site-header .navbar-nav .nav-link:hover {
