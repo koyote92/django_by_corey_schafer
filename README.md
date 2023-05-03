@@ -1,3 +1,3 @@
 # django_by_corey_schafer
-Second attempt to study Django, now with YouTube
-!!! Not done !!!
+<br>!!! CANCELLED !!!
+<br>Second attempt to study Django, now with YouTube
